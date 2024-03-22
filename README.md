@@ -34,8 +34,8 @@ We noticed that recipes taking more than five hours are less than 5% of the data
 
 <iframe
   src="assets/recipes-hours.html"
-  width="400"
-  height="1200"
+  width="800"
+  height="400"
   frameborder="0"
 ></iframe>
 
@@ -43,8 +43,8 @@ We plotted the distribution of `n_ingredients` to investigate how many ingredien
 
 <iframe
   src="assets/steps-distribution.html"
-  width="400"
-  height="1200"
+  width="800"
+  height="400"
   frameborder="0"
 ></iframe>
 
@@ -52,8 +52,8 @@ We also investigate the relationship between categories of `rating` and the time
 
 <iframe
   src="assets/cooking-time-by-rating.html"
-  width="400"
-  height="1200"
+  width="800"
+  height="400"
   frameborder="0"
 ></iframe>
 
@@ -92,7 +92,7 @@ Our resulting p-value after performing a permutation test using difference in me
 
 <iframe
   src="assets/minutes_missing.html"
-  width="400"
+  width="800"
   height="1200"
   frameborder="0"
 ></iframe>
@@ -113,8 +113,8 @@ Our resulting p-value after performing a permutation test using difference in me
 
 <iframe
   src="assets/n-steps-missing.html"
-  width="400"
-  height="1200"
+  width="800"
+  height="400"
   frameborder="0"
 ></iframe>
 
@@ -160,8 +160,8 @@ In the design of our baseline model features, we observed the pairwise correlati
 
 <iframe
   src="assets/correlation_matrix_heatmap.html"
-  width="400"
-  height="1200"
+  width="800"
+  height="400"
   frameborder="0"
 ></iframe>
 
@@ -190,8 +190,8 @@ We added two new transformed features and changed our model selection. We decide
 
 <iframe
   src="assets/kde_plots.html"
-  width="400"
-  height="1200"
+  width="800"
+  height="400"
   frameborder="0"
 ></iframe>
 
@@ -203,8 +203,8 @@ We tuned the hyperparameter `max_depth` because we wanted to prevent overfitting
 
 <iframe
   src="assets/max_depth_vs_R2_plot.html"
-  width="400"
-  height="1200"
+  width="800"
+  height="400"
   frameborder="0"
 ></iframe>
 
@@ -213,8 +213,8 @@ We tuned the hyperparameter `max_depth` because we wanted to prevent overfitting
 
 <iframe
   src="assets/max_depth_vs_RMSE_plot.html"
-  width="400"
-  height="1200"
+  width="800"
+  height="400"
   frameborder="0"
 ></iframe>
 
