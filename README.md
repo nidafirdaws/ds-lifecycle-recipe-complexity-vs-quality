@@ -91,7 +91,7 @@ We conduct a permutation test to check whether the missingness of `rating` is de
 Our resulting p-value after performing a permutation test using difference in means is 0.115. At an alpha level of 0.05, we fail to reject the null. The columns `rating` and `minutes` are independent of each other. 
 
 <iframe
-  src="assets/minutes-missing.html"
+  src="assets/minutes_missing.html"
   width="800"
   height="1200"
   frameborder="0"
@@ -207,6 +207,9 @@ We tuned the hyperparameter `max_depth` because we wanted to prevent overfitting
   height="1200"
   frameborder="0"
 ></iframe>
+
+
+
 
 <iframe
   src="assets/max_depth_vs_RMSE_plot.html"
