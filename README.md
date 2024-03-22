@@ -34,8 +34,8 @@ We noticed that recipes taking more than five hours are less than 5% of the data
 
 <iframe
   src="assets/recipes-hours.html"
-  width="200"
-  height="300"
+  width="400"
+  height="600"
   frameborder="0"
 ></iframe>
 
@@ -43,8 +43,8 @@ We plotted the distribution of `n_ingredients` to investigate how many ingredien
 
 <iframe
   src="assets/steps-distribution.html"
-  width="200"
-  height="300"
+  width="400"
+  height="600"
   frameborder="0"
 ></iframe>
 
@@ -52,8 +52,8 @@ We also investigate the relationship between categories of `rating` and the time
 
 <iframe
   src="assets/cooking-time-by-rating.html"
-  width="200"
-  height="300"
+  width="400"
+  height="600"
   frameborder="0"
 ></iframe>
 
@@ -92,8 +92,8 @@ Our resulting p-value after performing a permutation test using difference in me
 
 <iframe
   src="assets/minutes-missing.html"
-  width="200"
-  height="300"
+  width="400"
+  height="600"
   frameborder="0"
 ></iframe>
 
@@ -113,8 +113,8 @@ Our resulting p-value after performing a permutation test using difference in me
 
 <iframe
   src="assets/n-steps-missing.html"
-  width="200"
-  height="300"
+  width="400"
+  height="600"
   frameborder="0"
 ></iframe>
 
@@ -160,8 +160,8 @@ In the design of our baseline model features, we observed the pairwise correlati
 
 <iframe
   src="assets/correlation_matrix_heatmap.html"
-  width="200"
-  height="300"
+  width="400"
+  height="600"
   frameborder="0"
 ></iframe>
 
@@ -186,12 +186,12 @@ Overall, our baseline model provides a foundation for understanding the relation
 
 In our final model, we introduced the feature `protein (PDV)` based on its correlation with the variable `n_ingredients`, the most correlated variable to `n_steps`, and its correlation to `n_steps` itself. This addition is grounded in the understanding that protein-rich ingredients like meat may necessitate specific preparation techniques or additional steps, thus influencing recipe complexity. By incorporating `protein (PDV)`, we aimed to capture this nuanced relationship and enhance the predictive capability of our model regarding recipe complexity.
 
-We added two new transformed features and changed our model selection. We decided to add a binary feature which indicates whether tags for a recipe contain the tag `easy` because, as we observe below, those recipes tend to have a higher number of steps. We also added `sugar (PDV)` as a feature because we knew from our prior analysis that `sugar (PDV)` and `n_steps` have a higher correlation compared to other nutritional values. `sugar (PDV)` is also highly correlated with `calories (#)`. However, `sugar (PDV)` also has very high variance. We wanted to preserve the relative distances between each datapoint, so we also transformed `sugar (PDV)` using `QuantileTransformer`.
+We added two new transformed features and changed our model selection. We decided to add a binary feature which indicates whether tags for a recipe contain the tag `easy` because, as we observe below, recipes without it tend to have a higher number of steps. We also added `sugar (PDV)` as a feature because we knew from our prior analysis that `sugar (PDV)` and `n_steps` have a higher correlation compared to other nutritional values. `sugar (PDV)` is also highly correlated with `calories (#)`. However, `sugar (PDV)` also has very high variance. We wanted to preserve the relative distances between each datapoint, so we also transformed `sugar (PDV)` using `QuantileTransformer`.
 
 <iframe
   src="assets/kde_plots.html"
-  width="200"
-  height="300"
+  width="400"
+  height="600"
   frameborder="0"
 ></iframe>
 
@@ -203,15 +203,15 @@ We tuned the hyperparameter `max_depth` because we wanted to prevent overfitting
 
 <iframe
   src="assets/max_depth_vs_R2_plot.html"
-  width="200"
-  height="300"
+  width="400"
+  height="600"
   frameborder="0"
 ></iframe>
 
 <iframe
   src="assets/max_depth_vs_RMSE_plot.html"
-  width="200"
-  height="300"
+  width="400"
+  height="600"
   frameborder="0"
 ></iframe>
 
